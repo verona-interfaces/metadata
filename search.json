@@ -16,98 +16,98 @@
   {
     "objectID": "verona-module-metadata.html",
     "href": "verona-module-metadata.html",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "",
     "text": "$id\n\n\nhttps://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json\n\n\n\n\n$schema\n\n\nhttp://json-schema.org/draft-07/schema#"
   },
   {
     "objectID": "verona-module-metadata.html#properties",
     "href": "verona-module-metadata.html#properties",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "Properties",
     "text": "Properties\n\n\n\n\nName\n\n\nType\n\n\n\n\n\n\ntype\n\n\nString\n\n\n\n\nid\n\n\nString\n\n\n\n\nname\n\n\nArray\n\n\n\n\ndescription\n\n\nArray\n\n\n\n\nversion\n\n\nString\n\n\n\n\nspecVersion\n\n\nString\n\n\n\n\nmetadataVersion\n\n\nString\n\n\n\n\nnotSupportedFeatures\n\n\nArray\n\n\n\n\ndependencies\n\n\nArray\n\n\n\n\nmaintainer\n\n\nObject\n\n\n\n\ncode\n\n\nObject"
   },
   {
     "objectID": "verona-module-metadata.html#type",
     "href": "verona-module-metadata.html#type",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "type",
     "text": "type\n\n\n\n\nTitle\n\n\nVerona Module Type\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nYes\n\n\n\n\nEnum\n\n\n\n\neditor\n\n\nplayer\n\n\nschemer\n\n\ncoder"
   },
   {
     "objectID": "verona-module-metadata.html#id",
     "href": "verona-module-metadata.html#id",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "id",
     "text": "id\n\n\n\n\nTitle\n\n\nIdentifier\n\n\n\n\nDescription\n\n\nThe id will be used as reference by any application using this module\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nYes\n\n\n\n\nPattern\n\n\n^[A-Za-z][A-Za-z0-9_-]*$"
   },
   {
     "objectID": "verona-module-metadata.html#name",
     "href": "verona-module-metadata.html#name",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "name",
     "text": "name\n\n\n\n\nTitle\n\n\nName\n\n\n\n\nDescription\n\n\nName to be used in lists or forms when the identifier is too short\n\n\n\n\nType\n\n\nArray\n\n\n\n\nRequired\n\n\nYes\n\n\n\n\nMin Items\n\n\n1"
   },
   {
     "objectID": "verona-module-metadata.html#description",
     "href": "verona-module-metadata.html#description",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "description",
     "text": "description\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\nDescription\n\n\nThe description should include any use case and should refer to used data formats.\n\n\n\n\nType\n\n\nArray\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nMin Items\n\n\n1"
   },
   {
     "objectID": "verona-module-metadata.html#version",
     "href": "verona-module-metadata.html#version",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "version",
     "text": "version\n\n\n\n\nTitle\n\n\nVersion in SemVer2 notation\n\n\n\n\nDescription\n\n\nSemantic Versioning 2.0.0 required (MAJOR.MINOR.PATCH).\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nYes\n\n\n\n\nPattern\n\n\n^(0|[1-9].(0|[1-9].(0|[1-9](?:-((?:0|[1-9]a-zA-Z-][0-9a-zA-Z-])(?:.(?:0|[1-9]a-zA-Z-][0-9a-zA-Z-]))))?(?:+([0-9a-zA-Z-]+(?:.[0-9a-zA-Z-]+)))?$\n\n\n\n\nExamples\n\n\n\n1.5.2\n\n\n0.12.4-beta\n\n\n12.0.0-rc.1"
   },
   {
     "objectID": "verona-module-metadata.html#specversion",
     "href": "verona-module-metadata.html#specversion",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "specVersion",
     "text": "specVersion\n\n\n\n\nTitle\n\n\nVersion of Supported Module Specification\n\n\n\n\nDescription\n\n\nVersion of the Verona specification supported by this module in the form 'MAJOR.MINOR'.\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nYes\n\n\n\n\nPattern\n\n\n^(0|[1-9].(0|[1-9]$\n\n\n\n\nExamples\n\n\n\n1.5\n\n\n4.12"
   },
   {
     "objectID": "verona-module-metadata.html#metadataversion",
     "href": "verona-module-metadata.html#metadataversion",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "metadataVersion",
     "text": "metadataVersion\n\n\n\n\nTitle\n\n\nVersion of Supported Metadata Specification\n\n\n\n\nDescription\n\n\nVersion of the Verona Metadata specification supported by this metadata in the form of 'MAJOR.MINOR'.\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nYes\n\n\n\n\nPattern\n\n\n^(0|[1-9].(0|[1-9]$\n\n\n\n\nExamples\n\n\n\n1.5\n\n\n4.12"
   },
   {
     "objectID": "verona-module-metadata.html#notsupportedfeatures",
     "href": "verona-module-metadata.html#notsupportedfeatures",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "notSupportedFeatures",
     "text": "notSupportedFeatures\n\n\n\n\nTitle\n\n\nList of all features not supported\n\n\n\n\nDescription\n\n\nUse the predefined keys to name not supported features.\n\n\n\n\nType\n\n\nArray\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nUnique Items\n\n\ntrue\n\n\n\n\nMin Items\n\n\n1"
   },
   {
     "objectID": "verona-module-metadata.html#dependencies",
     "href": "verona-module-metadata.html#dependencies",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "dependencies",
     "text": "dependencies\n\n\n\n\nTitle\n\n\nDependencies\n\n\n\n\nDescription\n\n\nPackages needed during runtime.\n\n\n\n\nType\n\n\nArray\n\n\n\n\nRequired\n\n\nNo"
   },
   {
     "objectID": "verona-module-metadata.html#maintainer",
     "href": "verona-module-metadata.html#maintainer",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "maintainer",
     "text": "maintainer\n\n\n\n\nTitle\n\n\nMaintainer\n\n\n\n\nDescription\n\n\nMaintainer of the verona module\n\n\n\n\nType\n\n\nObject\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\n\nProperties\n\n\n\n\nName\n\n\nType\n\n\n\n\n\n\nname\n\n\nArray\n\n\n\n\nurl\n\n\nString\n\n\n\n\nemail\n\n\nString\n\n\n\n\n\n\nmaintainer.name\n\n\n\n\nTitle\n\n\nName\n\n\n\n\nDescription\n\n\nName of maintainer\n\n\n\n\nType\n\n\nArray\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nMin Items\n\n\n1\n\n\n\n\n\n\nmaintainer.url\n\n\n\n\nTitle\n\n\nURL\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nFormat\n\n\nuri\n\n\n\n\n\n\nmaintainer.email\n\n\n\n\nTitle\n\n\nE-Mail\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nFormat\n\n\nemail"
   },
   {
     "objectID": "verona-module-metadata.html#code",
     "href": "verona-module-metadata.html#code",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "code",
     "text": "code\n\n\n\n\nTitle\n\n\nCode\n\n\n\n\nDescription\n\n\nData about source code\n\n\n\n\nType\n\n\nObject\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\n\nProperties\n\n\n\n\nName\n\n\nType\n\n\n\n\n\n\nrepositoryType\n\n\nString\n\n\n\n\nrepositoryUrl\n\n\nString\n\n\n\n\nlicenseType\n\n\nString\n\n\n\n\nlicenseUrl\n\n\nString\n\n\n\n\n\n\ncode.repositoryType\n\n\n\n\nTitle\n\n\nRepository Type\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nDefault\n\n\ngit\n\n\n\n\nExamples\n\n\n\nsvn\n\n\nmercurial\n\n\n\n\n\n\n\ncode.repositoryUrl\n\n\n\n\nTitle\n\n\nRepository Url\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nFormat\n\n\nuri\n\n\n\n\n\n\ncode.licenseType\n\n\n\n\nTitle\n\n\nLicense Type\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nDefault\n\n\nMIT\n\n\n\n\nExamples\n\n\n\nBSD-3-Clause\n\n\nISC\n\n\n\n\n\n\n\ncode.licenseUrl\n\n\n\n\nTitle\n\n\nLicense Url\n\n\n\n\nType\n\n\nString\n\n\n\n\nRequired\n\n\nNo\n\n\n\n\nDefault\n\n\nhttps://opensource.org/licenses/MIT\n\n\n\n\nFormat\n\n\nuri"
   },
   {
     "objectID": "verona-module-metadata.html#schema",
     "href": "verona-module-metadata.html#schema",
-    "title": "Verona Module Metaadata",
+    "title": "Metadata Specification",
     "section": "Schema",
     "text": "Schema\n\n{\n    \"$id\": \"https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json\",\n    \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n    \"title\": \"Verona Module Metadata\",\n    \"type\": \"object\",\n    \"default\": {\n        \"$schema\": \"https://raw.githubusercontent.com/verona-interfaces/metadata/master/verona-module-metadata.json\"\n    },\n    \"properties\": {\n        \"type\": {\n            \"title\": \"Verona Module Type\",\n            \"type\": \"string\",\n            \"enum\": [\n                \"editor\",\n                \"player\",\n                \"schemer\",\n                \"coder\"\n            ]\n        },\n        \"id\": {\n            \"title\": \"Identifier\",\n            \"description\": \"The id will be used as reference by any application using this module\",\n            \"type\": \"string\",\n            \"pattern\": \"^[A-Za-z][A-Za-z0-9_-]*$\"\n        },\n        \"name\": {\n            \"title\": \"Name\",\n            \"description\": \"Name to be used in lists or forms when the identifier is too short\",\n            \"$ref\": \"#/$defs/languageTaggedStrings\"\n        },\n        \"description\": {\n            \"title\": \"Description\",\n            \"description\": \"The description should include any use case and should refer to used data formats.\",\n            \"$ref\": \"#/$defs/languageTaggedStrings\"\n        },\n        \"version\": {\n            \"title\": \"Version in SemVer2 notation\",\n            \"description\": \"Semantic Versioning 2.0.0 required (MAJOR.MINOR.PATCH).\",\n            \"type\": \"string\",\n            \"pattern\": \"^(0|[1-9]\\\\d*)\\\\.(0|[1-9]\\\\d*)\\\\.(0|[1-9]\\\\d*)(?:-((?:0|[1-9]\\\\d*|\\\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\\\.(?:0|[1-9]\\\\d*|\\\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\\\+([0-9a-zA-Z-]+(?:\\\\.[0-9a-zA-Z-]+)*))?$\",\n            \"examples\": [\n                \"1.5.2\",\n                \"0.12.4-beta\",\n                \"12.0.0-rc.1\"\n            ]\n        },\n        \"specVersion\": {\n            \"title\": \"Version of Supported Module Specification\",\n            \"description\": \"Version of the Verona specification supported by this module in the form 'MAJOR.MINOR'.\",\n            \"type\": \"string\",\n            \"pattern\": \"^(0|[1-9]\\\\d*)\\\\.(0|[1-9]\\\\d*)$\",\n            \"examples\": [\n                \"1.5\",\n                \"4.12\"\n            ]\n        },\n        \"metadataVersion\": {\n            \"title\": \"Version of Supported Metadata Specification\",\n            \"description\": \"Version of the Verona Metadata specification supported by this metadata in the form of 'MAJOR.MINOR'.\",\n            \"type\": \"string\",\n            \"pattern\": \"^(0|[1-9]\\\\d*)\\\\.(0|[1-9]\\\\d*)$\",\n            \"examples\": [\n                \"1.5\",\n                \"4.12\"\n            ]\n        },\n        \"notSupportedFeatures\": {\n            \"title\": \"List of all features not supported\",\n            \"description\": \"Use the predefined keys to name not supported features.\",\n            \"type\": \"array\",\n            \"items\": {\n                \"type\": \"string\",\n                \"enum\": [\n                    \"focus-notify\",\n                    \"log-policy\",\n                    \"paging-mode\",\n                    \"navigation-denied\",\n                    \"variable-data\"\n                ]\n            },\n            \"minItems\": 1,\n            \"uniqueItems\": true\n        },\n        \"dependencies\": {\n            \"title\": \"Dependencies\",\n            \"description\": \"Packages needed during runtime.\",\n            \"$ref\": \"#/$defs/dependencies\"\n        },\n        \"maintainer\": {\n            \"title\": \"Maintainer\",\n            \"description\": \"Maintainer of the verona module\",\n            \"type\": \"object\",\n            \"properties\": {\n                \"name\": {\n                    \"title\": \"Name\",\n                    \"description\": \"Name of maintainer\",\n                    \"$ref\": \"#/$defs/languageTaggedStrings\"\n                },\n                \"url\": {\n                    \"title\": \"URL\",\n                    \"type\": \"string\",\n                    \"format\": \"uri\"\n                },\n                \"email\": {\n                    \"title\": \"E-Mail\",\n                    \"type\": \"string\",\n                    \"format\": \"email\"\n                }\n            }\n        },\n        \"code\": {\n            \"title\": \"Code\",\n            \"description\": \"Data about source code\",\n            \"type\": \"object\",\n            \"properties\": {\n                \"repositoryType\": {\n                    \"title\": \"Repository Type\",\n                    \"type\": \"string\",\n                    \"default\": \"git\",\n                    \"examples\": [\n                        \"svn\",\n                        \"mercurial\"\n                    ]\n                },\n                \"repositoryUrl\": {\n                    \"title\": \"Repository Url\",\n                    \"type\": \"string\",\n                    \"format\": \"uri\"\n                },\n                \"licenseType\": {\n                    \"title\": \"License Type\",\n                    \"type\": \"string\",\n                    \"default\": \"MIT\",\n                    \"examples\": [\n                        \"BSD-3-Clause\",\n                        \"ISC\"\n                    ]\n                },\n                \"licenseUrl\": {\n                    \"title\": \"License Url\",\n                    \"type\": \"string\",\n                    \"format\": \"uri\",\n                    \"default\": \"https://opensource.org/licenses/MIT\"\n                }\n            }\n        }\n    },\n    \"required\": [\n        \"id\",\n        \"version\",\n        \"type\",\n        \"name\",\n        \"specVersion\",\n        \"metadataVersion\"\n    ],\n    \"$defs\": {\n        \"languageTaggedStrings\": {\n            \"type\": \"array\",\n            \"items\": {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"lang\": {\n                        \"type\": \"string\",\n                        \"title\": \"Language as ISO 639-1 Alpha-2 code\",\n                        \"description\": \"This language code declares the language of the value.\",\n                        \"pattern\": \"^[a-z]{2}$\",\n                        \"default\": \"de\",\n                        \"examples\": [\n                            \"en\",\n                            \"fr\"\n                        ]\n                    },\n                    \"value\": {\n                        \"type\": \"string\",\n                        \"title\": \"Value\",\n                        \"minLength\": 1\n                    }\n                },\n                \"required\": [\n                    \"value\"\n                ]\n            },\n            \"minItems\": 1\n        },\n        \"dependencies\": {\n            \"type\": \"array\",\n            \"items\": {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"id\": {\n                        \"type\": \"string\",\n                        \"title\": \"Id of the package or service\",\n                        \"description\": \"Used to load or access on demand.\"\n                    },\n                    \"description\": {\n                        \"type\": \"string\",\n                        \"title\": \"Description\",\n                        \"description\": \"Helps to understand the function of the package or service.\"\n                    },\n                    \"type\": {\n                        \"title\": \"Dependency Type\",\n                        \"type\": \"string\",\n                        \"description\": \"File is to be provided along the module, service is an accessible url.\",\n                        \"enum\": [\n                            \"file\",\n                            \"service\"\n                        ]\n                    },\n                    \"required\": {\n                        \"type\": \"boolean\",\n                        \"title\": \"Required\",\n                        \"description\": \"States whether this packages or service is needed for all use cases of the Verona module or only for some special use cases.\"\n                    }\n                },\n                \"required\": [\n                    \"id\",\n                    \"required\",\n                    \"type\"\n                ]\n            }\n        }\n    }\n}"
   },
